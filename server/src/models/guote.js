@@ -6,8 +6,10 @@ const guoteSchema = new mongoose.Schema({
     required: true,
   },
   author: String,
-  guotedate: Date,
-  likes: Number,
+  likes: {
+    type: Number,
+    default: 0
+  },
   comments: [String],
 });
 
