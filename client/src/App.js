@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Router, Link } from "@reach/router";
 
 import Guotes from "./Guotes";
-import Guote from "./Guote";
+import Guote from "./Views/Guotes/Guote";
 
 import "./style.css";
 const API_URL = process.env.REACT_APP_API;
@@ -48,11 +48,7 @@ function App() {
       });
   }
 
-  return (
-    <>
-      
-    </>
-  );
+  return <></>;
 }
 
 export default App;
