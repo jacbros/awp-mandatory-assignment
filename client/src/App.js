@@ -5,6 +5,8 @@ import Guotes from "./Guotes";
 import Guote from "./Views/Guotes/Guote";
 
 import "./style.css";
+import navbar from "./Components/NavBar";
+import router from "./Router/router";
 const API_URL = process.env.REACT_APP_API;
 
 function App() {
@@ -48,7 +50,14 @@ function App() {
       });
   }
 
-  return <></>;
+  return (
+    <>
+      <main>
+        <navbar />
+        <router />
+      </main>
+    </>
+  );
 }
 
 export default App;
