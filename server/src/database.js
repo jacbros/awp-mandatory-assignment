@@ -17,7 +17,7 @@ async function connectDatabase() {
 
   try {
     await client.connect();
-    console.log("Connected corresctly to server");
+    console.log("Connected correctly to server");
 
     const collection = client
       .db("awp-mandatory-assignment")
